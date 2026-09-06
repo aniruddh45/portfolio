@@ -843,3 +843,144 @@ footer {
         padding-bottom: 100px;
     }
 }
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding-bottom: 120px;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    min-height: 120px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(16, 20, 40, 0.75);
+
+    border: 1px solid rgba(100, 150, 255, 0.18);
+
+    border-radius: 20px;
+
+    transition: all 0.35s ease;
+
+    backdrop-filter: blur(12px);
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #4adfff;
+
+    background: rgba(30, 40, 75, 0.75);
+
+    box-shadow:
+        0 0 25px rgba(74, 223, 255, 0.15),
+        0 0 50px rgba(120, 80, 255, 0.1);
+}
+
+
+/* Contact Icon */
+
+.contact-icon {
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    background: linear-gradient(
+        135deg,
+        #24c9ff,
+        #8060ff
+    );
+
+    box-shadow:
+        0 0 20px rgba(50, 190, 255, 0.2);
+}
+
+.linkedin-icon {
+    font-family: Arial, sans-serif;
+
+    font-size: 1.2rem;
+}
+
+
+/* Contact Text */
+
+.contact-details {
+    min-width: 0;
+}
+
+.contact-details span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #54d9ff;
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 0.62rem;
+
+    letter-spacing: 2px;
+}
+
+.contact-details h3 {
+    font-size: 0.9rem;
+
+    font-weight: 500;
+
+    color: #e4e8f5;
+
+    word-break: break-word;
+
+    line-height: 1.5;
+}
+
+
+/* Contact Responsive */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        min-height: 100px;
+    }
+
+}
